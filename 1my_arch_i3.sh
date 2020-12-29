@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Цель скрипта - быстрое развертывание системы с вашими персональными настройками (конфиг XFCE, темы, программы и т.д.).
+# Цель скрипта - быстрое развертывание системы с вашими персональными настройками (конфиг i3, темы, программы и т.д.).
 
 
 loadkeys ru
@@ -36,4 +36,4 @@ pacstrap /mnt base base-devel linux linux-firmware nano dhcpcd netctl
 echo '3.3 Настройка системы'
 genfstab -pU /mnt >> /mnt/etc/fstab
 
-arch-chroot /mnt sh -c "$(curl -fsSL git.io/2my_arch_manjaro.sh)"
+arch-chroot /mnt sh -c "$(curl -fsSL git.io/2my_arch_i3.sh)"

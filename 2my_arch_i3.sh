@@ -62,13 +62,6 @@ fi
 echo 'Ставим иксы и драйвера'
 pacman -S $gui_install
 
-echo "Ставим XFCE"
-pacman -S xfce4 xfce4-goodies --noconfirm
-
-echo 'Cтавим DM'
-pacman -S lxdm --noconfirm
-systemctl enable lxdm
-
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm 
 
@@ -79,6 +72,6 @@ echo 'Подключаем автозагрузку менеджера вход�
 systemctl enable NetworkManager
 
 echo 'Установка завершена! Перезагрузите систему.'
-echo 'Если хотите подключить AUR, установить мои конфиги XFCE, тогда после перезагрзки и входа в систему, установите wget (sudo pacman -S wget) и выполните команду:'
-echo 'wget git.io/3my_arch_manjaro.sh && sh 3my_arch_manjaro.sh'
+echo 'Если хотите подключить AUR, установить мои конфиги i3, тогда после перезагрзки и входа в систему, установите wget (sudo pacman -S wget) и выполните команду:'
+echo 'wget git.io/3my_arch_i3.sh && sh 3my_arch_i3.sh'
 exit

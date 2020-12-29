@@ -11,9 +11,6 @@ wget git.io/yay-install.sh && sh yay-install.sh --noconfirm
 #sudo pacman -S xdg-user-dirs --noconfirm
 #xdg-user-dirs-update
 
-echo 'Удаляем лишнее'
-sudo pacman -Rs xfburn orage parole ristretto
-
 echo 'Установка базовых программ и пакетов'
 sudo pacman -S reflector firefox firefox-i18n-ru ufw f2fs-tools dosfstools ntfs-3g alsa-lib alsa-utils file-roller p7zip unrar gvfs aspell-ru pulseaudio pavucontrol youtube-dl peek --noconfirm
 
@@ -22,7 +19,7 @@ sudo pacman -S chromium flameshot veracrypt vlc freemind filezilla gimp libreoff
 gpg --keyserver keys.gnupg.net --recv-keys FC918B335044912E 
 
 yay -Syy
-yay -S xflux hunspell-ru pamac-aur-git conky-lua timeshift tusk vscodium-bin figma-linux xorg-xkill etcher-bin garuda-settings-manager-git dropbox ttf-symbola ttf-clear-sans --noconfirm
+yay -S xflux hunspell-ru pamac-aur conky-lua timeshift tusk vscodium-bin figma-linux xorg-xkill etcher-bin dropbox ttf-symbola ttf-clear-sans --noconfirm
 
 echo 'Шрифты'
 wget https://github.com/Andreyr76/my_arch_uefi/raw/main/attach/fonts.tar.gz
@@ -32,12 +29,8 @@ sudo fc-cache -f -v
 echo "Ставим i3 с моими настройками?"
 read -p "1 - Да, 2 - Нет: " vm_setting
 if [[ $vm_setting == 1 ]]; then
-    pacman -S pacman -S i3-wm polybar dmenu pcmanfm ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler compton jq --noconfirm
-    yay -S polybar ttf-weather-icons ttf-clear-sans
-    wget https://github.com/ordanax/arch/raw/master/attach/config_i3wm.tar.gz
-    sudo rm -rf ~/.config/i3/*
-    sudo rm -rf ~/.config/polybar/*
-    sudo tar -xzf config_i3wm.tar.gz -C ~/
+    pacman -S pacman -S i3-wm dmenu pcmanfm ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
+    yay -S ttf-weather-icons ttf-clear-sans
 elif [[ $vm_setting == 2 ]]; then
   echo 'Пропускаем.'
 fi
