@@ -11,6 +11,11 @@ wget git.io/yay-install.sh && sh yay-install.sh --noconfirm
 #sudo pacman -S xdg-user-dirs --noconfirm
 #xdg-user-dirs-update
 
+echo "Ставим i3"
+pacman -S pacman -S i3-wm  i3status dmenu pcmanfm thunar ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
+yay -S ttf-weather-icons ttf-clear-sans
+
+
 echo 'Установка базовых программ и пакетов'
 sudo pacman -S reflector firefox firefox-i18n-ru ufw f2fs-tools dosfstools ntfs-3g alsa-lib alsa-utils file-roller p7zip unrar gvfs aspell-ru pulseaudio pavucontrol youtube-dl peek --noconfirm
 
@@ -25,15 +30,6 @@ echo 'Шрифты'
 wget https://github.com/Andreyr76/my_arch_uefi/raw/main/attach/fonts.tar.gz
 sudo tar -xzf fonts.tar.gz -C ~/
 sudo fc-cache -f -v
-
-echo "Ставим i3 с моими настройками?"
-read -p "1 - Да, 2 - Нет: " vm_setting
-if [[ $vm_setting == 1 ]]; then
-    pacman -S pacman -S i3-wm dmenu pcmanfm ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
-    yay -S ttf-weather-icons ttf-clear-sans
-elif [[ $vm_setting == 2 ]]; then
-  echo 'Пропускаем.'
-fi
 
 echo 'Подключаем zRam'
 yay -S zramswap --noconfirm
