@@ -15,6 +15,9 @@ echo "Ставим i3"
 pacman -S pacman -S i3-wm  i3status dmenu pcmanfm thunar ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
 yay -S ttf-weather-icons ttf-clear-sans
 
+echo '.xinitrc'
+echo 'exec i3' >> /home/andrey/.xinitrc
+
 
 echo 'Установка базовых программ и пакетов'
 sudo pacman -S reflector firefox firefox-i18n-ru ufw f2fs-tools dosfstools ntfs-3g alsa-lib alsa-utils file-roller p7zip unrar gvfs aspell-ru pulseaudio pavucontrol youtube-dl peek --noconfirm
