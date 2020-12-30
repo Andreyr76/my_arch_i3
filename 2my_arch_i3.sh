@@ -63,7 +63,7 @@ echo 'Ставим иксы и драйвера'
 pacman -S $gui_install
 
 echo "Ставим i3"
-pacman -S pacman -S i3-wm  i3status dmenu pcmanfm thunar ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
+pacman -S pacman -S i3-wm  i3status dmenu sakura ranger pcmanfm thunar ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
 
 echo '.xinitrc'
 echo 'exec i3' >> /home/andrey/.xinitrc
