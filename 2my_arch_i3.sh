@@ -63,7 +63,7 @@ echo 'Ставим иксы и драйвера'
 pacman -S $gui_install
 
 echo "Ставим i3"
-pacman -S pacman -S i3-wm  i3status dmenu sakura ranger pcmanfm thunar ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
+pacman -S i3-wm  i3status dmenu sakura ranger pcmanfm thunar ttf-font-awesome feh gvfs udiskie xorg-xbacklight ristretto tumbler picom jq --noconfirm
 
 echo '.xinitrc'
 echo 'exec i3' >> /home/andrey/.xinitrc
@@ -78,6 +78,7 @@ echo 'Подключаем автозагрузку менеджера вход�
 #systemctl enable NetworkManager
 
 echo 'Установка завершена! Перезагрузите систему.'
+
 echo 'Если хотите подключить AUR, установить мои конфиги i3, тогда после перезагрзки и входа в систему, установите wget (sudo pacman -S wget) и выполните команду:'
 echo 'wget git.io/3my_arch_i3.sh && sh 3my_arch_i3.sh'
 exit
