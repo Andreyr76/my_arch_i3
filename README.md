@@ -19,12 +19,12 @@ Cостоит из 3 частей.
 2) Скачать и запустить скрипт командой:
 
    ```bash
-   wget git.io/my_arch_manjaro1.sh && sh my_arch_manjaro1.sh
+   wget git.io/1my_arch_i3.sh && sh 1my_arch_i3.sh
    ```
    или
 
    ```bash
-   curl -OL git.io/my_arch_manjaro1.sh && sh my_arch_manjaro1.sh
+   curl -OL git.io/1my_arch_i3.sh && sh 1my_arch_i3.sh
    ```
    Запустится установка минимальной системы.
    2-я часть ставится автоматически и это базовая установка ArchLinux без программ.
@@ -36,5 +36,5 @@ Cостоит из 3 частей.
    Установка 3-й части производится из терминала командой:
 
    ```bash
-   wget git.io/my_arch_manjaro3.sh && sh my_arch_manjaro3.sh
+   wget git.io/3my_arch_i3.sh && sh 3my_arch_i3.sh
    ```
