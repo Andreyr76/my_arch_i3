@@ -75,7 +75,7 @@ echo 'Ставим сеть'
 pacman -S networkmanager network-manager-applet ppp --noconfirm
 
 echo 'Подключаем автозагрузку менеджера входа и интернет'
-#systemctl enable NetworkManager
+systemctl enable NetworkManager
 
 echo 'Установка завершена! Перезагрузите систему.'
 
