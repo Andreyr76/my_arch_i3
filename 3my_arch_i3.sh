@@ -22,7 +22,7 @@ sudo pacman -S chromium flameshot veracrypt vlc freemind filezilla gimp libreoff
 gpg --keyserver keys.gnupg.net --recv-keys FC918B335044912E 
 
 yay -Syy
-yay -S sbxkb xflux hunspell-ru pamac-aur conky-lua tusk vscodium-bin figma-linux xorg-xkill etcher-bin dropbox polybar ttf-weather-icons ttf-clear-sans tlp playerctl ttf-symbola ttf-clear-sans --noconfirm
+yay -S sbxkb xflux hunspell-ru pamac-aur conky-lua tusk vscodium-bin figma-linux xorg-xkill etcher-bin dropbox polybar ttf-weather-icons ttf-clear-sans tlp playerctl archtorify-git ttf-symbola ttf-clear-sans --noconfirm
 
 echo 'Качаем и устанавливаем настройки i3'
 # Чтобы сделать копию ваших настоек перейдите в домашнюю директорию ~/username
