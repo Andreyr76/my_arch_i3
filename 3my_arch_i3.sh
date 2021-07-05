@@ -11,7 +11,7 @@ wget git.io/yay-install.sh && sh yay-install.sh --noconfirm
 #sudo pacman -S xdg-user-dirs --noconfirm
 #xdg-user-dirs-update
 
-echo "Ставим i3"
+echo "Ставим"
 yay -S ttf-weather-icons ttf-clear-sans
 
 echo 'Установка базовых программ и пакетов'
