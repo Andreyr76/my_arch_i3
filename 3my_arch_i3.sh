@@ -45,7 +45,7 @@ sudo rm -rf ~/.config/i3/*
 sudo tar -xzf config.tar.gz -C ~/
 
 echo 'Шрифты'
-wget https://github.com/Andreyr76/my_arch_uefi/raw/main/attach/fonts.tar.gz
+wget https://github.com/Andreyr76/my_arch_i3/raw/main/attach/fonts.tar.gz
 sudo tar -xzf fonts.tar.gz -C ~/
 sudo fc-cache -f -v
 
@@ -61,6 +61,10 @@ sudo systemctl enable ufw
 
 echo 'Темы zsh'
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+echo '------'
+wget https://github.com/Andreyr76/my_arch_i3/raw/main/attach/temp.tar.gz
+sudo tar -xzf temp.tar.gz -C ~/
 
 echo 'Очистка'
 rm -rf ~/downloads/
