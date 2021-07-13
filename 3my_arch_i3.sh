@@ -26,7 +26,7 @@ sudo pacman -S chromium flameshot veracrypt vlc freemind filezilla gimp libreoff
 #gpg --keyserver keys.gnupg.net --recv-keys 2954CC8585E27A3F
 
 yay -Syy
-yay -S sbxkb xflux hunspell-ru pamac-aur tusk vscodium-bin figma-linux xorg-xkill etcher-bin polybar ttf-weather-icons ttf-clear-sans tlp playerctl archtorify-git ttf-symbola ttf-clear-sans tor torsocks freetube-bin adwaita-dark i3-battery-popup --noconfirm
+yay -S sbxkb xflux hunspell-ru pamac-aur tusk vscodium-bin figma-linux xorg-xkill etcher-bin polybar ttf-weather-icons ttf-clear-sans tlp playerctl archtorify-git ttf-symbola ttf-clear-sans tor torsocks freetube-bin adwaita-dark wireguard-tools i3-battery-popup --noconfirm
 
 echo 'qemu-kvm'
 yay -S qemu virt-manager ebtables
