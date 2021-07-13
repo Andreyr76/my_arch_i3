@@ -50,9 +50,9 @@ sudo tar -xzf fonts.tar.gz -C ~/
 sudo fc-cache -f -v
 
 echo 'Курсоры'
-sudo pacman -S capitaine-cursors --noconfirm
-yay -S xcursor-breeze-serie-obsidian --noconfirm
-yay -S breeze-obsidian-cursor-theme --noconfirm
+sudo pacman -S capitaine-cursors
+yay -S xcursor-breeze-serie-obsidian
+yay -S breeze-obsidian-cursor-theme
 
 echo 'Подключаем zRam'
 yay -S zramswap --noconfirm
