@@ -77,6 +77,10 @@ pacman -S networkmanager network-manager-applet ppp --noconfirm
 echo 'Подключаем автозагрузку менеджера входа и интернет'
 systemctl enable NetworkManager
 
+echo 'Ставим zsh'
+sudo pacman -S zsh
+chsh -s /bin/zsh
+
 echo 'Установка завершена! Перезагрузите систему.'
 
 echo 'Если хотите подключить AUR, установить мои конфиги i3, тогда после перезагрзки и входа в систему, установите wget (sudo pacman -S wget) и выполните команду:'

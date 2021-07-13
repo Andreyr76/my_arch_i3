@@ -17,18 +17,18 @@ yay -S ttf-weather-icons ttf-clear-sans
 echo 'Установка базовых программ и пакетов'
 sudo pacman -S reflector firefox firefox-i18n-ru ufw f2fs-tools dosfstools ntfs-3g alsa-lib alsa-utils file-roller p7zip unrar gvfs aspell-ru pulseaudio pavucontrol youtube-dl rofi ranger pcmanfm jq pacman-contrib sakura speedtest-cli peek --noconfirm
 
-sudo pacman -S chromium flameshot veracrypt vlc freemind filezilla gimp libreoffice libreoffice-fresh-ru neofetch qbittorrent screenfetch telegram-desktop gparted evince keepassxc nano vim neovim featherpad fbreader audacious git ktouch klavaro clamtk mc htop tmux unrar zip ark gnome-disk-utility gedit uget viewnior smplayer xclip smtube cherrytree glu moc gcolor2 kitty lxappearance mousepad adwaita-dark galculator xclip --noconfirm
+sudo pacman -S chromium flameshot veracrypt vlc freemind filezilla gimp libreoffice libreoffice-fresh-ru neofetch qbittorrent screenfetch telegram-desktop gparted evince keepassxc nano vim neovim featherpad fbreader audacious git ktouch klavaro clamtk mc htop tmux unrar zip ark gnome-disk-utility gedit uget viewnior smplayer xclip smtube cherrytree glu moc gcolor2 kitty lxappearance mousepad galculator xclip --noconfirm
 
 # Add key dropbox
-gpg --keyserver keys.gnupg.net --recv-keys FC918B335044912E 
+#gpg --keyserver keys.gnupg.net --recv-keys FC918B335044912E 
 
 # Add key librewolf
-gpg --keyserver keys.gnupg.net --recv-keys 2954CC8585E27A3F
+#gpg --keyserver keys.gnupg.net --recv-keys 2954CC8585E27A3F
 
 yay -Syy
-yay -S sbxkb xflux hunspell-ru pamac-aur conky-lua tusk vscodium-bin figma-linux xorg-xkill etcher-bin dropbox polybar ttf-weather-icons ttf-clear-sans tlp playerctl archtorify-git ttf-symbola ttf-clear-sans tor torsocks librewolf-bin freetube-bin i3-battery-popup --noconfirm
+yay -S sbxkb xflux hunspell-ru pamac-aur tusk vscodium-bin figma-linux xorg-xkill etcher-bin polybar ttf-weather-icons ttf-clear-sans tlp playerctl archtorify-git ttf-symbola ttf-clear-sans tor torsocks freetube-bin adwaita-dark i3-battery-popup --noconfirm
 
-#qemu-kvm
+echo 'qemu-kvm'
 yay -S qemu virt-manager ebtables
 sudo systemctl enable libvirtd
 sudo systemctl start libvirtd
@@ -58,6 +58,9 @@ sudo ufw enable
 
 echo 'Добавляем в автозагрузку:'
 sudo systemctl enable ufw
+
+echo 'Темы zsh'
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 echo 'Очистка'
 rm -rf ~/downloads/
