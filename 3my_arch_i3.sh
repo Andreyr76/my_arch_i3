@@ -49,6 +49,11 @@ wget https://github.com/Andreyr76/my_arch_i3/raw/main/attach/fonts.tar.gz
 sudo tar -xzf fonts.tar.gz -C ~/
 sudo fc-cache -f -v
 
+echo 'Курсоры'
+sudo pacman -S capitaine-cursors --noconfirm
+yay -S xcursor-breeze-serie-obsidian --noconfirm
+yay -S breeze-obsidian-cursor-theme --noconfirm
+
 echo 'Подключаем zRam'
 yay -S zramswap --noconfirm
 sudo systemctl enable zramswap.service
