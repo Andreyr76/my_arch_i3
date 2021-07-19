@@ -78,9 +78,11 @@ wget https://github.com/Andreyr76/my_arch_i3/raw/main/attach/temp.tar.gz
 sudo tar -xzf temp.tar.gz -C ~/
 
 echo "Wine"
-sudo pacman -S wine wine_gecko wine-mono
+sudo pacman -Sy curl gamemode icoutils wget zenity bubblewrap zstd cabextract tar steam --noconfirm
 
-sudo pacman -S lib32-mpg123 lib32-gnutls
+sudo pacman -S wine wine_gecko wine-mono --noconfirm
+
+sudo pacman -S lib32-mpg123 lib32-gnutls --noconfirm
 
 echo 'Очистка'
 rm -rf ~/downloads/
